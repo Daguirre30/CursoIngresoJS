@@ -8,6 +8,8 @@ function MostrarAumento()
 	var numeroDivisor;
 	
 	numeroDividendo = document.getElementById('numeroDividendo').value;
+	numeroDivisor = document.getElementById('numeroDivisor').value;
+	alert(parseInt(numeroDividendo) + parseInt(numeroDivisor) *1.10);
 	
 	
 }
