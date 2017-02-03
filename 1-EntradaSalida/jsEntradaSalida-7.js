@@ -9,7 +9,7 @@ function sumar()
 
 	numeroUno = document.getElementById('numeroUno').value;
 	numeroDos = document.getElementById('numeroDos').value;
-	alert(parseInt(numeroUno) + parseInt(numeroDos));
+	alert("La suma es "parseInt(numeroUno) + parseInt(numeroDos));
 }
 
 function restar()
@@ -19,7 +19,7 @@ function restar()
 
 	numeroUno = document.getElementById('numeroUno').value;
 	numeroDos = document.getElementById('numeroDos').value;
-	alert(numeroUno - numeroDos);
+	alert("La resta es "parseInt(numeroUno) - parseInt(numeroDos));
 }
 
 function multiplicar()
@@ -29,7 +29,7 @@ function multiplicar()
 
 	numeroUno = document.getElementById('numeroUno').value;
 	numeroDos = document.getElementById('numeroDos').value;
-	alert(numeroUno * numeroDos);
+	alert("La multiplicación es "parseInt(numeroUno) * parseInt(numeroDos));
 }
 
 function dividir()
@@ -39,6 +39,6 @@ function dividir()
 
 	numeroUno = document.getElementById('numeroUno').value;
 	numeroDos = document.getElementById('numeroDos').value;
-	alert(numeroUno / numeroDos);
+	alert("La división es "parseInt(numeroUno) / parseInt(numeroDos));
 }
 
