@@ -8,19 +8,29 @@ function Rectangulo ()
 {
 	var largo;
 	var ancho;
-	var radio;
-
+	
 	largo = document.getElementById('Largo').value;
 	ancho = document.getElementById('Ancho').value;
-	radio = document.getElementById('Radio').value;
 	alert(parseInt(ancho) * parseInt(largo) * 3);
 
 }
 function Circulo () 
 {
+	var radio
+
+	radio = document.getElementById('Radio').value;
+	alert(parseInt(radio)*2);
 	
 }
 function Materiales () 
 {
+	var largo;
+	var ancho;
+	var cemento;
+	var cal;
+	
+	largo = document.getElementById('Largo').value;
+	ancho = document.getElementById('Ancho').value;
+	alert(parseInt(ancho) * parseInt(largo) * );
 	
 }
