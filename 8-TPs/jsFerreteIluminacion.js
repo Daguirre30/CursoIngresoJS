@@ -11,17 +11,18 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 function CalcularPrecio () 
 {
 	//Primera parte del ejercicio
- 	var cantidad;
+ 	var cantidad = document.getElementById('Cantidad').value;;
  	var precioBruto = cantidad *35;
- 	var precioDescuento;
+ 	var precioDescuento = precioBruto;
+	var marca = document.getElementById('Marca').value;
+
+	
 
  	
-
- 	cantidad = document.getElementById('Cantidad').value;
- 	precioDescuento = document.getElementById('precioDescuento').value);
+ 
  	if(cantidad >= 6)
  	{
- 		parseInt(precioDescuento * 0.50);
+ 		precioDescuento = parseInt(precioBruto * 0.50);
  	}
  	else
  	{
@@ -29,47 +30,50 @@ function CalcularPrecio ()
  		{
  			if(marca == "ArgentinaLuz")
  			{
- 				parseInt(precioDescuento *0.60);
+ 				precioDescuento = parseInt(precioBruto  *0.60);
  			}
  			else
  			{
- 				parseInt(precioDescuento *0.70);
+ 				precioDescuento = parseInt(precioBruto  *0.70);
  			}
- 		if(cantidad == 4)
- 		{
- 			if(marca == "ArgentinaLuz" || "FelipeLamparas")
- 			{
- 				parseInt(precioDescuento * 0.75);
- 			}
- 			else
- 			{
- 				parseInt(precioDescuento *0.80);
- 			}
- 		if(cantidad == 3)
- 		{
- 			if(marca == "ArgentinaLuz")
- 			{
- 				parseInt(precioDescuento * 0.85);
- 			}
- 			if(marca == "FelipeLamparas")
- 			{
- 				parseInt(precioDescuento * 0.90);
- 			}
- 			else
- 			{
- 				parseInt(precioDescuento *0.95);
- 			}
- 		}
-
- 		}
-
- 		}
+		} else {
+			if(cantidad == 4)
+			{
+				if ((marca == "ArgentinaLuz") || (marca == "FelipeLamparas"))
+				{
+					precioDescuento = parseInt(precioBruto  * 0.75);
+				}
+				else
+				{
+					precioDescuento = parseInt(precioBruto  *0.80);
+				}
+			} else {
+				if(cantidad == 3)
+				{
+					if(marca == "ArgentinaLuz")
+					{
+						precioDescuento = parseInt(precioBruto  * 0.85);
+					}
+					if(marca == "FelipeLamparas")
+					{
+						precioDescuento = parseInt(precioBruto  * 0.90);
+					}
+					else
+					{
+						precioDescuento = parseInt(precioBruto  *0.95);
+					}
+				}
+			}
+		}			
 
  	}
- 	
+ 	var IIBB = 0;
+	
  	if(precioDescuento > 120)
  	{
- 		parseInt(precioDescuento *1.10);
+ 		IIBB = parseInt(precioDescuento  *0.10);
+		alert("Usted pago" + IIBB + "de Ingresos Brutos");
+		precioDescuento = precioDescuento + IIBB;
 
  	}
  	document.getElementById('precioDescuento').value = precioDescuento
