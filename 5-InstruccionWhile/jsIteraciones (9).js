@@ -5,6 +5,8 @@ function Mostrar()
 	// declarar variables
 	
 	var respuesta='si';
+	var maximo;
+	var minimo;
 
 	while(respuesta!='no')
 	{
